@@ -1,6 +1,6 @@
 /* Fundo totalmente branco e texto preto em todo o site */
 body {
-    font-family: Comic, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -10,6 +10,7 @@ body {
 /* O quadrado atrás do título: fundo branco e apenas uma borda preta fina */
 header {
     border: 1px solid #000000;
+    background-color: rgb(52, 52, 122);
     padding: 20px;
     text-align: center;
     margin: 20px auto;
@@ -19,12 +20,12 @@ header {
 /* Títulos e Subtítulos simples */
 h1 {
     font-size: 24px;
+    text-align: center;
     margin: 0 0 10px 0;
 }
 
 .subtitulo {
     font-size: 14px;
-    font-style: italic;
     margin: 0;
 }
 
