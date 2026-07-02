@@ -1,154 +1,124 @@
-/* Configuração Geral do Corpo da Página */
+/* Fundo totalmente branco e texto preto em todo o site */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Fundo totalmente branco */
-    color: #333333;           /* Texto cinza escuro para melhor leitura */
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Cabeçalho - O "Quadrado" atrás do título */
+/* O quadrado atrás do título: fundo branco e apenas uma borda preta fina */
 header {
-    background-color: #f0f4f8; /* Um tom sutil de azul/cinza para o quadrado (pode mudar para #ffffff se quiser tudo branco) */
-    border: 1px solid #d0d7de; /* Uma borda fina e discreta */
+    border: 1px solid #000000;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 750px;
 }
 
-/* Título Principal */
+/* Títulos e Subtítulos simples */
 h1 {
-    color: #000080;           /* Azul escuro clássico */
-    font-size: 26px;
-    margin: 0 0 5px 0;
+    font-size: 24px;
+    margin: 0 0 10px 0;
 }
 
-/* Subtítulo dentro do Header */
 .subtitulo {
-    color: #555555;
-    font-family: Arial, sans-serif;
-    font-style: italic;
     font-size: 14px;
+    font-style: italic;
     margin: 0;
 }
 
-/* Área de Conteúdo Principal */
+/* Alinhamento do conteúdo principal */
 main {
     max-width: 750px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 15px;
-    background-color: #ffffff;
 }
 
-/* Título dos Posts */
+/* Título dos posts */
 h2 {
-    color: #333333;
-    text-align: left;
     font-size: 20px;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Contador de Visitas e Elementos do Post */
+/* Removeu-se todas as caixas, fundos e bordas dos blocos abaixo */
 .contador-container, .post-principal, .comentarios-secao {
-    background-color: #ffffff;
-    border: 1px solid #e1e4e6;
-    padding: 15px;
-    margin-bottom: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .contador-texto, #contador-visitas {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333333;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .data-post {
     font-size: 12px;
-    color: #777777;
     font-style: italic;
+    color: #555555;
 }
 
-/* Imagens */
+/* Imagens sem bordas decorativas */
 .imagem-container {
-    text-align: center;
     margin: 15px 0;
 }
 
 .imagem-container img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
 }
 
 .legenda-image {
     font-size: 12px;
-    color: #666666;
-    margin-top: 5px;
+    color: #555555;
 }
 
-/* Botões Modernos e Limpos */
+/* Botão simples (apenas texto com borda comum) */
 .retro-btn {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 5px 10px;
     font-family: Arial, sans-serif;
-    font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
 }
 
-.retro-btn:hover {
-    background-color: #0052a3;
-}
-
-/* Seção de Curtidas e Comentários */
-.curtidas-secao {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
-}
-
-#texto-curtidas {
-    font-size: 14px;
-    font-weight: bold;
-}
-
+/* Campos de texto simples */
 .input-grupo {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .input-grupo label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
     font-size: 14px;
 }
 
 .input-grupo input, .input-grupo textarea {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid #000000;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
 }
 
+/* Lista de comentários limpa */
 #lista-comentarios {
-    background-color: #ffffff;
-    border: 1px solid #eee;
-    max-height: 200px;
-    overflow-y: auto;
-    padding: 10px;
-    margin-top: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 15px;
 }
 
 .comentario-item {
     font-size: 13px;
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
+    padding: 5px 0;
+    border-bottom: 1px dashed #000000;
 }
 
 .comentario-item:last-child {
@@ -158,7 +128,6 @@ h2 {
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 30px 0;
     font-size: 12px;
-    color: #999999;
 }
