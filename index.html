@@ -4,77 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Pessoal</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace,
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #204e8a;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        article {
-            margin-bottom: 40px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-        article:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        h2 {
-            color: #2a7ae4;
-            margin-top: 0;
-        }
-        .data-post {
-            color: #777;
-            font-size: 0.9em;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Blog feito por mim mesmo, Davi</h1>
+        <h1>Dicas de Dev</h1>
     </header>
 
     <main>
         <article>
-            <h2>Meu Nome é Davi Lang Cavalheiro</h2>
+            <h2>Primeiros passos com HTML e CSS</h2>
             <p class="data-post">Publicado em: 2 de Julho de 2026</p>
-            <p>Este site foi realizado por mim mesmo, atraves do curso do Alura -Pagina Web: do zero a primeira interação- acho que está bem bom, por que foi eu que fiz.</p>
+            <p>Criar o seu primeiro site é mais fácil do que parece. O HTML organiza o conteúdo, enquanto o CSS cuida de toda a parte visual, como cores, fontes e alinhamentos.</p>
         </article>
 
         <article>
-            <h2>Por que eu fiz esse site?</h2>
-            <p class="data-post">Publicado em: 2 de Junho de 2026</p>
-            <p>Olha, Finalmente concluí as lições da Alura sobre criação de sites e blogs! Foram horas de código, muito aprendizado e, claro, aquela sensação incrível de ver a página funcionando exatamente como eu planejei. Criar meu próprio espaço na web do zero não foi só um desafio, mas um passo enorme para dominar a programação e o desenvolvimento. Quem diria que aquelas linhas de código fariam tanto sentido? 💻✨ Orgulhoso demais do resultado e pronto para os próximos projetos. Que venham os próximos desafios!</p>
+            <h2>Por que aprender JavaScript?</h2>
+            <p class="data-post">Publicado em: 28 de Junho de 2026</p>
+            <p>Se o HTML é a estrutura e o CSS é o design, o JavaScript é o que dá vida ao seu site. Com ele, você consegue criar interatividade, animações e lógica complexa nas suas páginas web.</p>
         </article>
     </main>
 
+    <button id="botao-tema">Alternar Tema</button>
+
     <footer>
-        <p>&copy; 2026 - Desenvolvido por um estudante Davi Lang Cavalheiro</p>
+        <p>&copy; 2026 - Desenvolvido por um estudante Alura</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

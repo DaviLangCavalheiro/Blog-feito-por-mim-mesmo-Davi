@@ -1,1 +1,91 @@
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+header {
+    background-color: #2a7ae4;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+article {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    color: #2a7ae4;
+    margin-top: 0;
+}
+
+.data-post {
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Botão de alternar tema */
+#botao-tema {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #2a7ae4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Classes para o Modo Escuro que o JS vai ativar */
+body.modo-escuro {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.modo-escuro main {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+body.modo-escuro h2 {
+    color: #64a1f4;
+}
+
+body.modo-escuro #botao-tema {
+    background-color: #f4f4f4;
+    color: #121212;
+}
