@@ -1,9 +1,8 @@
 /* Estética Anos 2000 / Web 1.0 */
 body {
-    font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+    font-family: "Arial Rounded MT Bold", sans-serif;
     margin: 0;
     padding: 0;
-    /* Fundo escuro com padrão de estrelas típico da época */
     background-color: #000033;
     background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
                       radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
