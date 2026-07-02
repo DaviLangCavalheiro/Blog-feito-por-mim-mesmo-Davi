@@ -1,188 +1,144 @@
-/* Estética Anos 2000 / Web 1.0 */
+/* Configuração Geral do Corpo da Página */
 body {
-    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000033;
-    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-                      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
-    background-size: 550px 550px;
-    background-position: 0 0, 40px 60px;
-    color: #ffff00; /* Texto amarelo clássico de destaque */
+    background-color: #ffffff; /* Fundo totalmente branco */
+    color: #333333;           /* Texto cinza escuro para melhor leitura */
 }
 
+/* Cabeçalho - O "Quadrado" atrás do título */
 header {
-    background-color: #000080; /* Azul escuro padrão Windows antigo */
-    border-bottom: 5px double #ffffff;
-    padding: 15px;
+    background-color: #f0f4f8; /* Um tom sutil de azul/cinza para o quadrado (pode mudar para #ffffff se quiser tudo branco) */
+    border: 1px solid #d0d7de; /* Uma borda fina e discreta */
+    padding: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-marquee {
-    background-color: #ff0000;
-    color: white;
-    font-weight: bold;
-    padding: 3px;
-    border: 2px inset #fff;
-}
-
+/* Título Principal */
 h1 {
-    color: #00ffff;
-    text-shadow: 2px 2px #ff00ff;
-    font-size: 28px;
-    margin: 10px 0;
+    color: #000080;           /* Azul escuro clássico */
+    font-size: 26px;
+    margin: 0 0 5px 0;
 }
 
+/* Subtítulo dentro do Header */
 .subtitulo {
-    color: #ffffff;
-    font-family: "Times New Roman", serif;
+    color: #555555;
+    font-family: Arial, sans-serif;
     font-style: italic;
+    font-size: 14px;
     margin: 0;
 }
 
+/* Área de Conteúdo Principal */
 main {
     max-width: 750px;
     margin: 20px auto;
     padding: 15px;
-    background-color: #c0c0c0; /* Cinza clássico do Windows 95/98 */
-    border: 4px raised #ffffff;
-    color: #000000; /* Texto interno preto para dar leitura */
-    box-shadow: 5px 5px 0px #000000;
+    background-color: #ffffff;
 }
 
-/* Contador Estilo Painel Digital */
-.contador-container {
-    background-color: #000000;
-    color: #00ff00;
-    font-family: monospace;
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
-    border: 3px inset #888;
+/* Título dos Posts */
+h2 {
+    color: #333333;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+/* Contador de Visitas e Elementos do Post */
+.contador-container, .post-principal, .comentarios-secao {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e6;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
-.contador-texto {
-    color: #ff00ff;
+.contador-texto, #contador-visitas {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
     font-weight: bold;
-    margin-right: 10px;
-}
-
-#contador-visitas {
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-/* Post Principal */
-.post-principal {
-    background-color: #ffffff;
-    border: 3px inset #888;
-    padding: 15px;
-    margin-bottom: 25px;
-}
-
-h2 {
-    color: #000080;
-    text-align: center;
-    border-bottom: 2px dashed #000080;
-    padding-bottom: 5px;
 }
 
 .data-post {
-    font-size: 11px;
-    color: #555;
+    font-size: 12px;
+    color: #777777;
     font-style: italic;
-    text-align: center;
 }
 
+/* Imagens */
 .imagem-container {
     text-align: center;
     margin: 15px 0;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border: 1px solid #888;
 }
 
 .imagem-container img {
     max-width: 100%;
     height: auto;
-    border: 3px solid #000080;
+    border: 1px solid #ddd;
 }
 
-.legenda-imagem {
+.legenda-image {
     font-size: 12px;
-    margin: 5px 0 0 0;
-    color: #444;
+    color: #666666;
+    margin-top: 5px;
 }
 
-/* Botões Retrô Estilo Windows 98 */
+/* Botões Modernos e Limpos */
 .retro-btn {
-    background-color: #c0c0c0;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #808080;
-    border-bottom: 2px solid #808080;
-    padding: 5px 10px;
-    font-family: "Comic Sans MS", sans-serif;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-.retro-btn:active {
-    border-top: 2px solid #808080;
-    border-left: 2px solid #808080;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+.retro-btn:hover {
+    background-color: #0052a3;
 }
 
+/* Seção de Curtidas e Comentários */
 .curtidas-secao {
     margin-top: 20px;
     padding-top: 15px;
-    border-top: 2px dashed #ccc;
+    border-top: 1px solid #eee;
 }
 
 #texto-curtidas {
-    margin-left: 10px;
     font-size: 14px;
     font-weight: bold;
 }
 
-/* Seção de Comentários (Livro de Visitas) */
-.comentarios-secao {
-    background-color: #e0e0e0;
-    border: 3px inset #fff;
-    padding: 15px;
-}
-
-.comentarios-secao h3 {
-    color: #ff00ff;
-    margin-top: 0;
-    text-align: center;
-}
-
 .input-grupo {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .input-grupo label {
     display: block;
     font-weight: bold;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-size: 14px;
 }
 
 .input-grupo input, .input-grupo textarea {
     width: 100%;
-    padding: 5px;
-    border: 2px inset #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
 #lista-comentarios {
-    background-color: #fff;
-    border: 2px inset #888;
+    background-color: #ffffff;
+    border: 1px solid #eee;
     max-height: 200px;
     overflow-y: auto;
     padding: 10px;
@@ -191,8 +147,8 @@ h2 {
 
 .comentario-item {
     font-size: 13px;
-    padding: 5px 0;
-    border-bottom: 1px dotted #ccc;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .comentario-item:last-child {
@@ -202,8 +158,7 @@ h2 {
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     font-size: 12px;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    color: #999999;
 }
