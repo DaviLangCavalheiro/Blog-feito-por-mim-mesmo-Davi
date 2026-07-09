@@ -8,50 +8,50 @@
 </head>
 <body>
 
-    <header>
-        <div class="marquee-container">
-            <marquee behavior="scroll" direction="left" scrollamount="5">
-                Esse é meu primeiro blog feito por mim no vscode.dev — Aprendendo na Alura!
+    <header class="blog-header">
+        <div class="marquee-wrapper">
+            <marquee behavior="scroll" direction="left" scrollamount="4">
+                Primeiro blog desenvolvido no vscode.dev — Aprendendo na Alura!
             </marquee>
         </div>
-        <h1>Meu Primeiro Blog</h1>
-        <p class="subtitulo">Desenvolvido por Davi</p>
+        <h1 class="blog-title">Meu Primeiro Blog</h1>
+        <p class="blog-subtitle">Por Davi</p>
     </header>
 
-    <main>
-        <div class="contador-container">
-            <span class="contador-texto">Visitante nº:</span>
+    <main class="blog-container">
+        <div class="visitas-box">
+            <span class="visitas-label">Leitores:</span>
             <span id="contador-visitas">000000</span>
         </div>
 
-        <article class="post-principal">
-            <h2>Tudo isso aprendendo na Alura, que top!</h2>
-            <p class="data-post">Postado em: Quinta-feira, 2 de Julho de 2026 às 16:20</p>
+        <article class="post-content">
+            <h2 class="post-title">Tudo isso aprendendo na Alura, que top!</h2>
+            <p class="post-date">Quinta-feira, 2 de Julho de 2026 às 16:20</p>
             
-            <div class="imagem-container">
-                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=600&auto=format&fit=crop&q=80" alt="Meu Computador Antigo">
-                <p class="legenda-imagem">Imagens integradas via URL externa</p>
+            <div class="post-image-container">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&auto=format&fit=crop&q=80" alt="Meu Computador Antigo">
+                <p class="post-image-caption">Imagens integradas via URL externa</p>
             </div>
 
             <p>Fala galera! Preciso contar para vocês a loucura que foi começar o curso de criação de websites na Alura. No começo, quando o professor abriu aquele tal de HTML, achei que era código da Matrix e que eu nunca ia entender nada. Pensei: "Sério que uma penca de tag dentro de sinal de menor e maior vira uma página?".</p>
             
             <p>Mas ó, vou te falar... conforme as aulas iam passando, a parada começou a fazer sentido! Quando juntei as tags de texto com o CSS e vi a tela mudar de cor e as paradas alinharem, bateu uma sensação muito massa de "caraca, eu que fiz isso!". O curso deles é direto ao ponto e não fica enrolando, o que me ajudou demais a não desistir no meio do caminho.</p>
 
-            <div class="imagem-container">
-                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&auto=format&fit=crop&q=80" alt="Código HTML na tela">
-                <p class="legenda-imagem">Evoluindo a cada linha de código</p>
+            <div class="post-image-container">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&auto=format&fit=crop&q=80" alt="Código HTML na tela">
+                <p class="post-image-caption">Evoluindo a cada linha de código</p>
             </div>
 
-            <div class="interacao-container">
-                <button id="btn-curtir" class="clean-btn">Curtir este Post!</button>
+            <div class="like-section">
+                <button id="btn-curtir" class="like-btn">Curtir este post</button>
                 <span id="texto-curtidas"><span id="total-curtidas">12</span> curtidas</span>
             </div>
         </article>
     </main>
 
-    <footer>
-        <p>© 2026 - Blog do Davi. Todos os direitos reservados.</p>
-        <p>Orgulhosamente feito por um estudante da Alura.</p>
+    <footer class="blog-footer">
+        <p>© 2026 — Blog do Davi. Todos os direitos reservados.</p>
+        <p class="footer-sub">Orgulhosamente desenvolvido por um estudante da Alura.</p>
     </footer>
 
     <script src="script.js"></script>

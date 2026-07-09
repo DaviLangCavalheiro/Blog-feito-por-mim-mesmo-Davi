@@ -1,180 +1,164 @@
-/* Configurações Gerais e Tipografia Clean */
+/* --- CONFIGURAÇÕES GERAIS --- */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8fafc; /* Fundo levemente cinza-azululado para descansar os olhos */
-    color: #334155;            /* Texto cinza escuro moderno */
-    line-height: 1.6;
-}
-
-/* Cabeçalho do Blog */
-header {
-    background-color: #0f172a; /* Azul ardósia muito elegante */
-    color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 4px solid #2563eb; /* Detalhe em azul elétrico */
-}
-
-.marquee-container {
-    max-width: 600px;
-    margin: 0 auto 15px auto;
-    background-color: #1e293b;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 13px;
-    color: #38bdf8;
-}
-
-h1 {
-    font-size: 32px;
-    margin: 0 0 8px 0;
-    font-weight: 800;
-}
-
-.subtitulo {
-    font-size: 14px;
-    color: #94a3b8;
-    margin: 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* Container Principal */
-main {
-    max-width: 680px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* Painel do Contador */
-.contador-container {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
     background-color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    border: 1px solid #e2e8f0;
+    color: #292929;
+    -webkit-font-smoothing: antialiased;
 }
 
-.contador-texto {
+/* --- CABEÇALHO (Estilo Minimalista / Medium) --- */
+.blog-header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.marquee-wrapper {
+    font-size: 12px;
+    color: #757575;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.blog-title {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
+}
+
+.blog-subtitle {
+    font-size: 14px;
+    color: #757575;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+.blog-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Contador Discreto */
+.visitas-box {
     font-size: 13px;
-    color: #64748b;
+    color: #757575;
+    margin-bottom: 30px;
+    font-family: monospace;
 }
 
 #contador-visitas {
-    font-weight: 700;
-    color: #0f172a;
-    font-family: monospace;
-    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a1a;
 }
 
-/* Artigo */
-.post-principal h2 {
-    font-size: 24px;
-    color: #0f172a;
-    margin: 0 0 6px 0;
-    line-height: 1.3;
+/* --- ARTIGO --- */
+.post-title {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
 }
 
-.data-post {
+.post-date {
     font-size: 13px;
-    color: #94a3b8;
-    margin-bottom: 25px;
+    color: #757575;
+    margin-bottom: 30px;
 }
 
-.post-principal p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #334155;
-    text-align: justify;
+.post-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #292929;
+    margin-bottom: 24px;
+    word-break: break-word;
 }
 
-/* Mídia e Imagens */
-.imagem-container {
-    margin: 30px 0;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e2e8f0;
+/* --- IMAGENS --- */
+.post-image-container {
+    margin: 35px 0;
 }
 
-.imagem-container img {
+.post-image-container img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
-.legenda-imagem {
+.post-image-caption {
     font-size: 13px;
-    color: #64748b;
+    color: #757575;
     text-align: center;
-    margin: 10px 0 0 0 !important;
+    margin-top: 10px;
     font-style: italic;
 }
 
-/* Área de Interação (Botão Curtir) */
-.interacao-container {
+/* --- BOTÃO DE CURTIR INTEGRADO --- */
+.like-section {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-top: 35px;
+    gap: 12px;
+    margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid #eaeaea;
 }
 
-.clean-btn {
-    background-color: #2563eb;
+.like-btn {
+    background-color: #1a1a1a;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease;
 }
 
-.clean-btn:hover {
-    background-color: #1d4ed8;
+.like-btn:hover {
+    background-color: #000000;
 }
 
-.clean-btn:active {
-    transform: scale(0.98);
-}
-
-.clean-btn:disabled {
-    background-color: #10b981; /* Fica verde ao clicar */
+.like-btn:disabled {
+    background-color: #a8a8a8;
     cursor: not-allowed;
 }
 
 #texto-curtidas {
     font-size: 14px;
-    color: #64748b;
+    color: #757575;
 }
 
 #total-curtidas {
     font-weight: 600;
-    color: #0f172a;
+    color: #1a1a1a;
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
+/* --- RODAPÉ --- */
+.blog-footer {
+    max-width: 700px;
+    margin: 60px auto 0 auto;
     padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
     font-size: 13px;
-    color: #94a3b8;
-    background-color: #ffffff;
-    border-top: 1px solid #e2e8f0;
-    margin-top: 60px;
+    color: #757575;
 }
 
-footer p {
+.blog-footer p {
     margin: 4px 0;
+}
+
+.footer-sub {
+    font-size: 12px;
+    color: #b3b3b3;
 }

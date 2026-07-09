@@ -1,4 +1,4 @@
-// === 1. CONTADOR DE VISITAS ===
+// === 1. CONTADOR DE VISITAS PERSISTENTE ===
 function inicializarContador() {
     const elementoContador = document.getElementById('contador-visitas');
     let visitas = localStorage.getItem('visitasSimuladas');
@@ -10,7 +10,6 @@ function inicializarContador() {
     visitas = parseInt(visitas) + 1;
     localStorage.setItem('visitasSimuladas', visitas);
     
-    // Mantém o preenchimento de zeros para estética limpa
     elementoContador.textContent = String(visitas).padStart(6, '0');
 }
 
@@ -18,11 +17,9 @@ function inicializarContador() {
 const btnCurtir = document.getElementById('btn-curtir');
 const totalCurtidasTxt = document.getElementById('total-curtidas');
 
-// Resgata os cliques salvos ou inicia com 12
 let curtidas = parseInt(localStorage.getItem('totalCurtidas')) || 12;
 totalCurtidasTxt.textContent = curtidas;
 
-// Verifica se o usuário já clicou antes para travar o botão
 if (localStorage.getItem('jaCurtiu') === 'true') {
     bloquearBotao();
 }
@@ -39,8 +36,8 @@ btnCurtir.addEventListener('click', () => {
 
 function bloquearBotao() {
     btnCurtir.disabled = true;
-    btnCurtir.textContent = "✓ Obrigado!";
+    btnCurtir.textContent = "✓ Curtido";
 }
 
-// Inicializa os scripts ao carregar o site
+// Inicializa as funções
 inicializarContador();
